@@ -1,0 +1,1 @@
+2024-09-16 16:36:36.561550;test_task_one_simple_test;True;0.0

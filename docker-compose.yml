@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  env:
+    image: python:3.8-alpine
+    command: [ "sh", "-c", "
+        cd code;
+        python -m unittest;
+      " ]
+    volumes:
+    - .:/code
