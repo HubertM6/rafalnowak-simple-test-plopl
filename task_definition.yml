@@ -7,9 +7,9 @@ tasks:
   task_1:
     checkTypes:
       FAST:
-        verification: python -m unittest test.test_task_1_fast
+        verification: python -m unittest test.test_1_fast
       FULL:
-        verification: python -m unittest test.test_task_1_full
+        verification: python -m unittest test.test_1_full
     results:
       - test_results/task_1/test_summary.txt
       - test_results/task_1/test_details.txt
