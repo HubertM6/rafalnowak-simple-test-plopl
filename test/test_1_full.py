@@ -45,6 +45,10 @@ class TaskTest(unittest.TestCase):
         end = time.time()
         duration = end - start
 
+        if result is None or len(result) != 3:
+            TaskTest.logger.log_single_test_result("test_task_one_simple_test", False, duration)
+            self.fail()
+
         passed = expected_min == result[0]
         passed = passed and expected_max == result[1]
         passed = passed and expected_avg == result[2]
